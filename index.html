@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Meu Amor!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FFB6C1 0%, #F5F5DC 50%, #FFA500 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #FF69B4;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #FF8C00;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .photos-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .photo-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            padding: 10px;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 350px; /* Mais espaço */
+            object-fit: contain; /* Não corta a imagem */
+            display: block;
+            background: #f0f0f0; /* Fundo neutro para fotos menores */
+        }
+
+        .photo-description {
+            padding: 15px;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+
+        .messages-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .message-box {
+            background: linear-gradient(145deg, #FFF0F5, #FFEFD5);
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px dashed #FFB6C1;
+            min-height: 150px;
+        }
+
+        .message-box textarea {
+            width: 100%;
+            height: 120px;
+            border: none;
+            background: transparent;
+            resize: none;
+            font-size: 1rem;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .message-box textarea:focus {
+            outline: none;
+        }
+
+        .message-box textarea::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+
+        .music-player {
+            background: linear-gradient(145deg, #FFEFD5, #FFF0F5);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .music-player h3 {
+            color: #FF8C00;
+            margin-bottom: 15px;
+        }
+
+        .audio-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .audio-controls input[type="file"] {
+            padding: 10px;
+            border: 2px dashed #FF69B4;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .custom-audio-player {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 15px;
+        }
+
+        .custom-audio-player audio {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .heart {
+            color: #FF69B4;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .photos-section,
+            .messages-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feliz Aniversário, Meu Amor! <span class="heart">❤️</span></h1>
+            <p class="subtitle">Cada momento ao seu lado é tão único e especial !</p>
+        </header>
+
+        <section class="photos-section">
+            <div class="photo-card">
+                <img src="Malu1.jpg" alt="Nois1">
+                <div class="photo-description">Nossa foto favorita atualmente 💗</div>
+            </div>
+            
+            <div class="photo-card">
+                <img src="Malu2.jpg" alt="Nois2">
+                <div class="photo-description">Quando a gente saiu junto pela primeira vez 💘</div>
+            </div>
+            
+            <div class="photo-card">
+                <img src="Malu3.jpg" alt="Nois3">
+                <div class="photo-description">Quando você me fez uma surpresa tão boa</div>
+            </div>
+        </section>
+
+        <section class="messages-section">
+            <div class="message-box">
+                <textarea placeholder="Feliz aniversário meu amor!! Te desejo meus muitos parabéns, você é uma pessoa incrível e está se tornando mais ainda a cada dia que passa. ❤️"></textarea>
+            </div>
+            
+            <div class="message-box">
+                <textarea placeholder="Esta foto tem um lugar muito especial no meu coração, foi quando eu descobri, neste dia, que você era o amor da minha vida. 💗"></textarea>
+            </div>
+            
+            <div class="message-box">
+                <textarea placeholder="Prometo estar ao seu lado sempre meu amor, neste novo ciclo, irei tentar o meu máximo para abrir esse sorriso lindo seu todos os dias. Já te disse que esses seus olhos são muito lindos?"></textarea>
+            </div>
+        </section>
+
+        <section class="music-player">
+            <h3>Minha dedicação para vocÇe hoje ❤️</h3>
+            <div class="custom-audio-player">
+                <audio controls autoplay>
+                    <source src="Os Anjos Cantam_spotdown.app.mp3" type="audio/mp3">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+        </section>
+
+
+        <footer>
+            <p>Feito com muito amor para você linda! <span class="heart">❤️</span></p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioFileInput = document.getElementById('audioFile');
+            const audioPlayer = document.getElementById('audioPlayer');
+            
+            audioFileInput.addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const objectURL = URL.createObjectURL(file);
+                    audioPlayer.src = objectURL;
+                    audioPlayer.load();
+                }
+            });
+            
+            // Salvar mensagens automaticamente
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach((textarea, index) => {
+                const savedMessage = localStorage.getItem(`anniversaryMessage${index}`);
+                if (savedMessage) {
+                    textarea.value = savedMessage;
+                }
+                
+                textarea.addEventListener('input', function() {
+                    localStorage.setItem(`anniversaryMessage${index}`, this.value);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+        <footer>
+            <p>Feito com muito amor para você linda! <span class="heart">❤️</span></p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioFileInput = document.getElementById('audioFile');
+            const audioPlayer = document.getElementById('audioPlayer');
+            
+            audioFileInput.addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const objectURL = URL.createObjectURL(file);
+                    audioPlayer.src = objectURL;
+                    audioPlayer.load();
+                }
+            });
+            
+            // Salvar mensagens automaticamente
+            const textareas = document.querySelectorAll('textarea');
+            textareas.forEach((textarea, index) => {
+                const savedMessage = localStorage.getItem(`anniversaryMessage${index}`);
+                if (savedMessage) {
+                    textarea.value = savedMessage;
+                }
+                
+                textarea.addEventListener('input', function() {
+                    localStorage.setItem(`anniversaryMessage${index}`, this.value);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
